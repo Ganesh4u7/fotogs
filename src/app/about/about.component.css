@@ -1,0 +1,153 @@
+#main-container{
+    width: 95%;
+    padding: 8px;
+  margin-left: 2.5%;
+}
+#wrapper{
+  background-color: rgba(0,0,0,0.8);
+  padding: 30px;
+}
+.title-container{
+  width: 100%;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 0px 8px;
+  margin-bottom: 8px;
+  /* background-color: tomato; */
+}
+#about-container{
+  display: none;
+}
+.description{
+  width: 100%;
+  padding-right: 20px;
+  margin-right: 8px;
+  display: inline-block;
+  text-align: left;
+  /* background-color: yellowgreen; */
+  font-size: 14px;
+}
+.description-styling{
+  text-align: justify;
+  padding: 0px 8px;
+}
+.picture{
+  background-color: white;
+  vertical-align: top;
+  text-align: left;
+  margin-right: 8px;
+  width: 100%;
+  object-fit: contain;
+  display: inline-block;
+}
+img{
+  width: 100%;
+}
+#services-container{
+  width: 100%;
+  text-align: center;
+}
+
+/* Mobile Optimization */
+@media screen and (min-width: 641px){
+  #about-container-mobile{
+    display: none;
+  }
+  #about-container{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  /* .description{
+    width: calc(100% - 256px);
+  }
+  .picture{
+    width: 240px;
+    height: 320px;
+  } */
+  .description{
+    width: calc(65% - 8px);
+  }
+  .picture{
+    width: calc(35% - 8px);
+    object-fit: cover;
+  }
+
+}
+@media screen and (min-width: 1152px){
+  .description{
+    font-size: 18px;
+  }
+}
+
+/******* Service Component CSS *******/
+
+.services-wrapper{
+  padding: 20px;
+}
+
+.service-main-container{
+  /* height: 128px; */
+  padding: 8px;
+  margin-bottom: 16px;
+  /* background-color: violet; */
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.logo-container{
+  width: 48px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  /* background-color: teal; */
+}
+.service-details-container{
+  width: calc(100% - 48px);
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: justify;
+}
+i{
+  font-size: 28px;
+  margin: 4px 0px;
+  color: #9cbc68;
+}
+.service-title-container{
+  height: 30%;
+  width: 100%;
+  margin-bottom: 16px;
+  /* background-color: palegreen; */
+}
+.service-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+}
+.service-description-container{
+  width: 90%;
+  height: 70%;
+  font-size: 16px;
+
+  /* background-color: peru; */
+}
+
+/* Mobile optimization */
+@media screen and (min-width: 320px){
+  .service-main-container{
+      width: 100%;
+  }
+}
+@media screen and (min-width: 640px){
+  .service-main-container{
+      width: 50%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .service-main-container{
+      width: 33.33%;
+  }
+}
