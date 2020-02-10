@@ -30,7 +30,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js",
+              "./node_modules/jquery/dist/jquery.js",
               "src/app/files/js/lightbox.min.js",
               "src/app/files/js/jquery.js"
             ]
