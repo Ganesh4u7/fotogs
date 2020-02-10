@@ -1,0 +1,17 @@
+
+html ,body{
+  background-color: #272516;
+  min-height: 100vh;
+  height: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.signout{
+  float: right;
+  cursor: pointer;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+</head>
+
+<body>
+<link rel="stylesheet" src="/src/app/files/css/lightbox.css" type="text/css" >
+<script type="text/javascript" src="../files/js/lightbox.min.js"></script>
+<script type="text/javascript" src="../files/js/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="../files/nav.js"></script>-->
+<!--<script type="text/javascript" src="../files/main.js"></script>-->
+<!--<video muted id="myVideo">-->
+<!--<source src="https://www.youtube.com/watch?v=05ZHUuQVvJM4"  type="video/mp4">-->
+<!--Your browser does not support HTML5 video.-->
+<!--</video>-->
+<div class="preload-video" id="preload-video">
+  <video preload="auto" autoplay="autoplay"  onloadedmetadata="this.muted = true" loop="loop">
+  <source src="../../assets/TheFotogsGlitch.mp4" type="video/mp4"></video>
+</div>
+<div id="main-container">
+
+
+
+  <div id="side-bar">
+    <div id="main-container1">
+      <div id="sidebar">
+        <a href="#">
+          <img src="assets/logo.png">
+        </a>
+        <div id="menu-container">
+
+             <div class="home1 active" id="first-block1">
+               <a (click)="scroll('first-block','first-block1')">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <div class="spn">HOME</div>
+              </a>
+             </div>
+
+            <div class="portfolio1" id="portfolio1">
+              <a  (click)="scroll('portfolio','portfolio1')">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <div class="spn">PORTOFOLIO</div>
+              </a>
+            </div>
+
+          <div class="about1" id="about1">
+             <a (click)="scroll('about','about1')">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <div class="spn">ABOUT</div>
+              </a>
+           </div>
+           <div class="contact1" id="contact1">
+             <a (click)="scroll('contact','contact1')">
+                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                <div class="spn">CONTACT</div>
+              </a>
+           </div>
+           <div class="elsewhere1" id="footer1">
+            <a (click)="scroll('footer','footer1')">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <div class="spn">ELSEWHERE</div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="side-bar-mobile">
+    <app-sidebar-mobile></app-sidebar-mobile>
+  </div>
+
+
+  <div id="content-scroll">
+    <div id="first-block">
+      <app-first-block></app-first-block>
+    </div>
+
+    <div id="portfolio">
+        <app-portfolio></app-portfolio>
+    </div>
+    <div id="about">
+        <app-about></app-about>
+
+    </div >
+    <div id="contact">
+        <app-contact></app-contact>
+
+    </div>
+      <div id="footer">
+        <app-footer></app-footer>
+
+      </div>
+
+
+  </div>
+</div>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).on('click','ul li',function () {
+$(this).addClass('active').siblings().removeClass('active')
+});
+setTimeout(function () {
+$('.loader_bg').fadeToggle();
+},4000);
+
+</script>
+
+</body>
+</html>

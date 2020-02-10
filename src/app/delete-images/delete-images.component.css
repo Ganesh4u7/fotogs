@@ -1,0 +1,151 @@
+
+
+html ,body{
+  background-color: #272516;
+  min-height: 100vh;
+  height: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+
+#grid {
+display: block;
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 10px;
+  -moz-column-count: 4;
+  -moz-column-gap: 10px;
+  column-count: 4;
+  column-gap: 10px;
+  box-sizing: border-box;
+}
+#grid img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 10px;
+}
+
+.fourthImage{
+  margin-right: 0;
+}
+
+h5{
+  font-size: 150%;
+  color: white;
+}
+
+
+.group:before,
+.group:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.group:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.group {
+  zoom: 1;
+}
+.container{
+  padding-top: 20px;
+
+}
+
+
+/*thumbnail styles*/
+
+.thumbnails {
+  margin-right: -15px;
+}
+
+.thumbnails a{
+  float:left;
+
+  /*padding-right: 15px;*/
+  /*margin-bottom: 15px;*/
+  margin-right: 10px;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.thumbnails img{
+  display: block;
+  transition: all .5s ease-in-out;
+}
+
+.thumbnails:hover img{
+  opacity: 1;
+  transform: scale(.92);
+
+}
+
+.thumbnails img:hover {
+  transform: scale(1);
+  opacity: .6;
+  box-shadow: 0 0 7px rgba(0,0,0,.5 );
+
+}
+.thumbnails .imgContainer:hover img{
+  transform: scale(1);
+  opacity: .6;
+  box-shadow: 0 0 7px rgba(0,0,0,.5 );
+
+}
+
+
+.thumbnails .button {
+position: absolute;
+
+  left: 60px;
+  top:40%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+
+.thumbnails a .button a {
+
+  padding: 12px 48px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  cursor: pointer;
+  /*z-index: 1;*/
+}
+
+
+/*.imgContainer:hover img {*/
+  /*opacity: 0.3;*/
+/*}*/
+
+.imgContainer:hover .button {
+  opacity: 1;
+}
+.thumbnails .imgContainer{
+position: relative;
+}
+
+.data-title{
+  text-align: center;
+}
+
+

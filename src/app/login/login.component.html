@@ -1,0 +1,28 @@
+<div class="col-md-5 login">
+  <form  [formGroup]="loginForm" (ngSubmit)="onLogin()" >
+    <fieldset>
+      <h1 class=""> Login in with Credentials </h1>
+
+      <div class="form-group">
+        <input type="email" id="lusername" class="form-control input-lg" placeholder="username"
+               formControlName="username"
+
+               required
+        >
+        <span class="text-muted" *ngIf="!loginForm.controls['username'].valid && loginForm.controls['username']?.touched"> Please enter a valid username</span>            </div>
+      <div class="form-group">
+        <input type="password" id="lpassword" class="form-control input-lg" placeholder="Password"
+               formControlName="pwd"
+
+               required
+        >
+        <span class="text-muted" *ngIf="!loginForm.controls['pwd'].valid && loginForm.controls['pwd']?.touched"> Please enter a valid Password</span>
+      </div>
+      <span *ngIf="!loginStatus" style="color: red;font-family: 'Lobster', 'cursive';"> Invalid Credentials </span>
+      <div>
+        <button type="submit" class="btn btn-lg btn-success" [disabled]="!loginForm.valid" value="Sign In">Sign In</button>
+      </div>
+
+    </fieldset>
+  </form>
+</div>

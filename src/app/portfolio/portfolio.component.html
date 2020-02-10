@@ -1,0 +1,39 @@
+<div id="main-container">
+  <div class="portfolio group" >
+    <section class="site-nav">
+      <ul class="group">
+        <h1 style="font-weight: bold; font-size: 30px; text-align: left; margin-top: 3%;">From Our Portfolio</h1>
+        <li><a (click)="loadImages('portrait')"  class="btn active" id="portrait">PORTRAIT</a></li>
+        <li><a (click)="loadImages('landscape')"  class="btn" id="landscape">LANDSCAPE</a></li>
+        <li><a (click)="loadImages('wedding')"  class="btn" id="wedding">WEDDINGS</a></li>
+        <li><a (click)="loadImages('birthday')"  class="btn" id="birthday">BIRTHDAYS</a></li>
+        <li><a (click)="loadImages('party')"  class="btn" id="party">PARTYS</a></li>
+        <li><a (click)="loadImages('best')"   class="btn" id="best">BEST OF ALL</a></li>
+
+      </ul>
+
+
+      <!--<div id="loader" ></div>-->
+      <div class="spinner" *ngIf="showSpinner">
+
+      </div>
+
+    </section>
+    <div class="container thumbnails " *ngIf="this.str != null">
+
+      <div id="grid"  *ngIf="!showSpinner"  >
+        <div  *ngFor="let img of data; let i =index " >
+
+
+          <a href="{{img.url}}" data-lightbox="gallery" > <img src="{{img.url}} "  width="304" height="236"></a>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div  *ngIf="data.length == 0 && showSpinner == false">
+      <p>No Images in this Category</p>
+    </div>
+
+</div>

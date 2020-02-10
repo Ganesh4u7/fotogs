@@ -1,0 +1,115 @@
+#main-container{
+  width: 100%;
+  height: 100vh;
+  vertical-align: top;
+  display: block;
+}
+#title-container{
+  width: 100%;
+  padding-top: 35vh;
+  padding-bottom: 10%;
+  text-align: center;
+  display: block;
+}
+.head h1{
+    font-family: raleway,sans-serif;
+    text-align: center;
+    margin-left: 80px;
+    transform: translateX(0px)translateY(0px);
+    opacity: 1;
+    color: white;
+    animation: type 1s;
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+    display: block;
+}
+.head h1{
+    margin: 0px;
+    font-size: 56px;
+}
+@keyframes type {
+    0%{
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px)translateY(0px);
+    }
+}
+.tail{
+  text-align: center !important;
+  display: inline-block;
+}
+.tail h1{
+  font-family: Consolas,sans-serif;
+  color: white;
+}
+@keyframes type1 {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.downArrow{
+  text-align: center;
+}
+i{
+    font-size: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    animation: arrow-bounce 1s infinite alternate forwards;
+}
+@keyframes arrow-bounce {
+  0%{
+    transform: translateY(10%);
+  }
+  100%{
+    transform: translateY(-30px);
+  }
+}
+
+/* mobile optimiztion */
+@media screen and (min-width: 320px){
+  .head h1{
+    margin: 0px;
+    font-size: 28px;
+    animation: none;
+  }
+  .tail h1{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 421px){
+  .head h1{
+    font-size: 30px;
+    animation: type 1s;
+    animation-fill-mode: forwards;
+    box-sizing: border-box;
+  }
+  .tail h1{
+    font-size: 14px;
+    animation: type1 2.5s steps(66);
+    animation-fill-mode: forwards;
+    border-right: 1px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+}
+@media screen and (min-width: 1024px){
+  .tail{
+    width: 70%;
+    display: inline-block;
+  }
+  .head h1{
+    font-size: 36px;
+  }
+  .tail h1{
+    font-size: 20px;
+  }
+}
