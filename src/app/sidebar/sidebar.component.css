@@ -1,0 +1,184 @@
+#main-container1{
+    position: relative !important;
+    width: 100%;
+    height: calc(100vh - 64px);
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 16px auto;
+}
+#menu-container{
+    position: absolute;
+    width: 64px;
+    top: calc(50% - 160px);
+}
+span{
+    display: none;
+}
+i{
+    margin: 16px auto;
+    /*color: rgba(165, 177, 191, 0.42);*/
+    /*font-size: 32px;*/
+}
+
+/* Mobile navbar */
+@media screen and (max-width: 767px){
+    #side-bar{
+        display: none;
+    }
+}
+
+
+
+
+
+#sidebar .home1{
+ font-size: 37px;
+  color: #9cbc68;
+  text-decoration:  none ;
+
+}
+#sidebar .home1 a{
+  color: #666;
+  position: relative;
+}
+#sidebar .home1 a:hover{
+  color: #9cbc68;
+
+
+}
+#sidebar .home1 a:hover .spn{
+  visibility: visible;
+  margin-top: -48px;
+  opacity: 1;
+}
+
+@keyframes popUp {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+
+.spn{
+  visibility: hidden;
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  opacity: 0;
+  width: auto;
+  height: 40px;
+  border:1px solid #9cbc68;
+  margin-left: 60px;
+  padding: 12px 10px 10px 10px;
+  background-color: #9cbc68;
+  box-sizing: border-box;
+  transition: all 500ms;
+
+
+
+
+}
+.spn:after{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #9cbc68;
+  border-right: 1px solid #9cbc68;
+  border-bottom: 1px solid #9cbc68;
+  border-left: 1px solid #9cbc68;
+  top: 50%;
+  left:-10px;
+  margin-top: -5px;
+  content: '';
+  transform: rotate(45deg);
+  margin-left: 5px;
+  background-color: #9cbc68;
+
+}
+
+
+
+#sidebar .portfolio1{
+
+  font-size: 27px;
+  color: #9cbc68;
+  text-decoration:  none ;
+
+}
+#sidebar .portfolio1 a{
+  color: #666;
+}
+#sidebar .portfolio1 a:hover{
+  color: #9cbc68;
+}
+#sidebar .portfolio1 a:hover .spn{
+
+  visibility: visible;
+  margin-top: -50px;
+  opacity: 1;
+
+}
+
+#sidebar .about1{
+
+  font-size: 30px;
+  color: #9cbc68;
+  text-decoration:  none ;
+
+}
+#sidebar .about1 a{
+  color: #666;
+}
+#sidebar .about1 a:hover{
+  color: #9cbc68;
+}
+#sidebar .about1 a:hover .spn{
+  visibility: visible;
+  margin-top: -50px;
+  opacity: 1;
+}
+
+#sidebar .contact1{
+
+  font-size: 27px;
+  color: #9cbc68;
+  text-decoration:  none ;
+
+}
+#sidebar .contact1 a{
+  color: #666;
+}
+#sidebar .contact1 a:hover{
+  color: #9cbc68;
+}
+#sidebar .contact1 a:hover .spn{
+  visibility: visible;
+  margin-top: -50px;
+  opacity: 1;
+}
+
+#sidebar .elsewhere{
+
+  font-size: 30px;
+  color: #9cbc68;
+  text-decoration:  none ;
+
+}
+#sidebar .elsewhere a{
+  color: #666;
+}
+#sidebar .elsewhere a:hover{
+  color: #9cbc68;
+}
+#sidebar .elsewhere a:hover .spn{
+  visibility: visible;
+  margin-top: -50px;
+  opacity: 1;
+}

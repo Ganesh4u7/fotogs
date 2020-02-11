@@ -1,0 +1,29 @@
+#main-container{
+    background-color: black;
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#menu-container{
+    width: 100%;
+    text-align: center;
+}
+.menu-item{
+    display: inline-block;
+    vertical-align: top;
+}
+i{
+    margin: 12px 8px;
+    color: #666666;
+    font-size: 24px;
+}
+#logo{
+    float: left;
+    margin: 8px;
+}
+
+
+#menu-container .active i{
+  color: #9cbc68;
+}
