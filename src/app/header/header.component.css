@@ -1,6 +1,9 @@
 
 nav{
-  height: 10%;
+  max-width: 100vh;
+}
+.container-fluid{
+  max-width: 100vh;
 }
 
 
@@ -9,11 +12,23 @@ nav{
   cursor: pointer;
 }
 
-@media  screen and (max-width: 480px) {
-  nav{
-    width: 480px;
-  }
- li{
-   width: 10%;
- }
-}
+
+/*@media screen and (min-width: 400px){*/
+  /*nav{*/
+    /*width: 360px;*/
+  /*}*/
+
+/*}*/
+/*@media screen and (max-width: 750px ){*/
+
+  /*nav{*/
+    /*width: 650px;*/
+  /*}*/
+
+/*}*/
+/*@media screen and (max-width: 550px) {*/
+  /*nav{*/
+    /*width: 480px;*/
+  /*}*/
+
+/*}*/
