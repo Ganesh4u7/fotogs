@@ -58,4 +58,5 @@ export class UploadimageComponent implements OnInit {
     return snapshot.state === 'running' && snapshot.bytesTransferred < snapshot.totalBytes;
   }
 
+
 }
