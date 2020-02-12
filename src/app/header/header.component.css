@@ -1,17 +1,19 @@
 
-html ,body{
-  background-color: #272516;
-  min-height: 100vh;
-  height: 100%;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+nav{
+  height: 10%;
 }
 
 
 .signout{
   float: right;
   cursor: pointer;
+}
+
+@media  screen and (max-width: 480px) {
+  nav{
+    width: 480px;
+  }
+ li{
+   width: 10%;
+ }
 }

@@ -1,6 +1,6 @@
 
 html ,body{
-   background: url("../homepage/photo1.jpg");
+  background: url("../homepage/photo1.jpg");
   min-height: 100vh;
   height: 100%;
 
@@ -12,6 +12,10 @@ html ,body{
 h5{
   font-size: 150%;
   color: white;
+}
+.signout{
+  float: right;
+  cursor: pointer;
 }
 
 .dropzone {

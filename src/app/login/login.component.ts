@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit{
       this.loginStatus = true;
       this.service.setLoggedin(true);
       console.log('true');
-          this.router.navigate(['upload']);
+          this.router.navigate(['header']);
     }
     else {
       this.loginStatus = false;

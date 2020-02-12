@@ -4,6 +4,7 @@ import {AngularFireStorage} from '@angular/fire/storage';
 
 
 import * as firebase from 'firebase';
+import {Router} from '@angular/router';
 
 
 
@@ -18,7 +19,7 @@ export class DeleteImagesComponent implements OnInit {
 
  str: String =null;
 
-  constructor(private db: AngularFirestore, private storage: AngularFireStorage) { }
+  constructor(private db: AngularFirestore, private storage: AngularFireStorage,private router: Router) { }
 
   ngOnInit() {
   }
@@ -75,6 +76,9 @@ this.data = [];
 
     }
 
+  }
+  signout(){
+    this.router.navigate(['/login']);
   }
 
 }

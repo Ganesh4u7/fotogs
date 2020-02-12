@@ -1,7 +1,7 @@
 
 
 html ,body{
-   background: url("../homepage/photo1.jpg");
+  background-color: #272516;
   min-height: 100vh;
   height: 100%;
 
@@ -17,7 +17,17 @@ img{
   margin-top: 20px;
 }
 
-
+.signout{
+  float: right;
+  cursor: pointer;
+}
+nav{
+  height: 10%;
+  display: block;
+}
+.container{
+  height: 90%;
+}
 
 #grid {
 display: block;

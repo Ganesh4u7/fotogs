@@ -1,5 +1,7 @@
 import { Component,ViewChild } from '@angular/core';
 import {NgForm} from '@angular/forms';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-uploader',
@@ -12,6 +14,7 @@ export class UploaderComponent  {
 
   files: File[] = [];
   str : String ;
+  constructor( private router: Router) { }
 
   toggleHover(event: boolean) {
     this.isHovering = event;
@@ -26,4 +29,8 @@ export class UploaderComponent  {
   ChangingValue(category:string){
     this.str = category;
   }
+  signout(){
+    this.router.navigate(['/login']);
+  }
+
 }
