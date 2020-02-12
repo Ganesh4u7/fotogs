@@ -28,7 +28,7 @@
   font-size: 14px;
 }
 .description-styling{
-  text-align: justify;
+  text-align: left;
   padding: 0px 8px;
 }
 .picture{
@@ -128,6 +128,7 @@ i{
   margin: 0px;
 }
 .service-description-container{
+  text-align: left;
   width: 90%;
   height: 70%;
   font-size: 16px;
