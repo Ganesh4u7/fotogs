@@ -1,8 +1,9 @@
 
 
 html ,body{
-  background: url("../homepage/photo1.jpg");
+  background:url("../homepage/photo1.jpg");
   min-height: 100vh;
+  max-width: 100vh;
   height: 100%;
 
   -webkit-background-size: cover;
@@ -159,3 +160,20 @@ position: relative;
 }
 
 
+@media screen and (max-width: 500px){
+  #grid{
+    column-count: 1;
+  }
+
+}
+@media screen and (max-width: 800px ){
+
+  #grid{
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 650px) {
+  #grid{
+    column-count: 1;
+  }
+}
