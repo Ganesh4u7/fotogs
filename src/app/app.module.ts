@@ -28,6 +28,7 @@ import {DeleteImagesComponent} from './delete-images/delete-images.component';
 import {HeaderComponent} from './header/header.component';
 import {HomepageComponent} from './homepage/homepage.component';
 import {LoginComponent} from './login/login.component';
+import { MessageComponent } from './message/message.component';
 import {AuthGuard} from './auth.guard';
 import {LoginService} from './login.service';
 
@@ -64,7 +65,8 @@ var firebaseConfig = {
     HeaderComponent,
     HomepageComponent,
     LoginComponent,
-    DropzoneDirective
+    DropzoneDirective,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

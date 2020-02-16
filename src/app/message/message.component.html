@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="container">
+  <div class="header">
+    <h2>Messages</h2>
+  </div>
+  <div class="messages">
+    <div>
+      <div class="message" *ngFor="let message of messages;let i = index ">
+        <div class="message-outline">
+        <button type="button" class="collapsible" (click)=" showMessage(i)"><p>Name: &nbsp; {{message.name}} &nbsp; &nbsp;  Subject: &nbsp;{{message.subject}} &nbsp;
+          </p> <p style="float: right"> Date: {{message.date}}</p></button>
+        <div class="content">
+          <p>Email: {{message.email}}</p>
+          <p>{{message.message}}</p>
+          <button type="button" class="btn btn-danger deleteButton" (click)="onDelete(i)" style="float: right">Delete</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

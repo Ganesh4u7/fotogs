@@ -7,6 +7,7 @@ import {AppComponent} from './app.component';
 import {HomepageComponent} from './homepage/homepage.component';
 import {LoginComponent} from './login/login.component';
 import {AuthGuard} from './auth.guard';
+import {MessageComponent} from './message/message.component';
 
 
 const appRoutes: Routes = [
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
   { path: 'delete', component: DeleteImagesComponent, canActivate: [AuthGuard]},
   {path: 'header', component: HeaderComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent },
+  {path:'messages', component: MessageComponent, canActivate: [AuthGuard]},
   {path: '', component: HomepageComponent}
 
 ];

@@ -36,19 +36,24 @@
             </div>
         </div>
         <div id="send-message-container">
+          <form [formGroup]="messageForm" (ngSubmit)="onSendMessage()">
             <div class="message-container">
                 <label class="form-field">Name</label>
-                <input class="form-field" type="text" name="" id="">
+                <input class="form-field" type="text" name="name" id="name" formControlName="name" required>
+              <span class="text-muted" *ngIf="!messageForm.controls['name'].valid && messageForm.controls['name']?.touched"> Please enter a name</span>
                 <label class="form-field">Email</label>
-                <input class="form-field" type="text" name="" id="">
+                <input class="form-field" type="email" name="email" id="email" formControlName="email" required>
+              <span class="text-muted" *ngIf="!messageForm.controls['email'].valid && messageForm.controls['email']?.touched"> Please enter a valid email</span>
                 <label class="form-field" >Subject</label>
-                <input class="form-field" type="text" name="" id="">
+                <input class="form-field" type="text" name="subject" id="subject" formControlName="subject">
             </div>
             <div class="message-container">
                 <label class="form-field">Message</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" formControlName="message" required></textarea>
+              <span class="text-muted" *ngIf="!messageForm.controls['message'].valid && messageForm.controls['message']?.touched"> Please enter message</span>
                 <input id="submit-btn" type="submit" value="Send Message" class="submit">
             </div>
+          </form>
         </div>
     </div>
 </div>

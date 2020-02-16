@@ -1,0 +1,35 @@
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.content p{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.message-outline{
+  margin-bottom: 10px;
+}
+
+
+.content .deleteButton{
+  margin-bottom: 5px;
+}
