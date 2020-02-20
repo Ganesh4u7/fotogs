@@ -8,6 +8,7 @@ import {HomepageComponent} from './homepage/homepage.component';
 import {LoginComponent} from './login/login.component';
 import {AuthGuard} from './auth.guard';
 import {MessageComponent} from './message/message.component';
+import {CustomPreloadingService} from './custom-preloading.service';
 
 
 const appRoutes: Routes = [
@@ -16,13 +17,13 @@ const appRoutes: Routes = [
   {path: 'header', component: HeaderComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent },
   {path:'messages', component: MessageComponent, canActivate: [AuthGuard]},
-  {path: '', component: HomepageComponent}
+  {path: '', data:{ preload:true}, component: HomepageComponent}
 
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(appRoutes,{preloadingStrategy: CustomPreloadingService})],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
